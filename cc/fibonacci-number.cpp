@@ -4,17 +4,18 @@
  * @Email: fishercloud@qq.com
  * @Github: https://github.com/FisherCloud
  * @Date: 2019-09-06 15:37:17
- * @LastEditTime: 2019-09-06 15:45:29
+ * @LastEditTime: 2019-10-14 14:38:33
+ */
+
+/**
+ * 方式一：暴力法，效率太低
+ * 方式二：动态规划 DP
  */
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
-/**
- * 方式一：暴力法，效率太低
- * 方式二：动态规划 DP
- */
 class Solution
 {
 public:
@@ -45,6 +46,7 @@ public:
 
 int main(int argc, char const *argv[])
 {
-
+    Solution s;
+    cout << "Result:" << s.fib(20);
     return 0;
 }
