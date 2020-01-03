@@ -4,7 +4,7 @@
  * @Email: fishercloud@qq.com
  * @Github: https://github.com/FisherCloud
  * @Date: 2020-01-03 14:59:07
- * @LastEditTime: 2020-01-03 16:11:47
+ * @LastEditTime: 2020-01-03 16:15:04
  */
 
 fn min_deletion_size(a: Vec<String>) -> i32 {
@@ -14,7 +14,7 @@ fn min_deletion_size(a: Vec<String>) -> i32 {
     let mut str_arr = vec![];
 
     for item in a {
-        let tmp = item.bytes().collect::<Vec<_>>(); // item.bytes().collect::<Vec<_>>()效率比item.chars().collect::<Vec<_>>()高
+        let tmp = item.bytes().collect::<Vec<_>>(); // item.bytes()效率比item.chars()高
         str_arr.push(tmp);
     }
 
