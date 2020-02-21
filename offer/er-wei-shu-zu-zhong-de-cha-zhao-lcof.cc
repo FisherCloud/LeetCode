@@ -4,7 +4,7 @@
  * @Email: fishercloud@qq.com
  * @Github: https://github.com/FisherCloud
  * @Date: 2020-02-21 19:40:03
- * @LastEditTime : 2020-02-21 20:09:42
+ * @LastEditTime : 2020-02-21 20:15:41
  */
 #include <iostream>
 #include <vector>
@@ -14,17 +14,17 @@ using namespace std;
 class Solution
 {
 public:
-    bool findNumberIn2DArray(vector<vector<int>> &matrix, int target)
+    bool findNumberIn2DArray(vector<vector<int>> &matrix, int target) // 从左下角开始查找
     {
-        if (matrix.empty())
+        if (matrix.empty() || matrix[0].empty())
         {
             return false;
         }
-        auto n = matrix[0].size();
-        auto m = matrix.size();
+        auto n = matrix.size();
+        auto m = matrix[0].size();
         int c = n - 1;
         int r = 0;
-        do // 左下角开始遍历
+        do
         {
             if (matrix[c][r] == target)
             {
@@ -38,7 +38,7 @@ public:
             {
                 r++;
             }
-        } while (c != n && r != m);
+        } while (c >= 0 && c != n && r >= 0 && r != m);
         return false;
     }
 };
