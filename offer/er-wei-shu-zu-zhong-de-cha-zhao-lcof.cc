@@ -4,7 +4,7 @@
  * @Email: fishercloud@qq.com
  * @Github: https://github.com/FisherCloud
  * @Date: 2020-02-21 19:40:03
- * @LastEditTime : 2020-02-21 20:08:02
+ * @LastEditTime : 2020-02-21 20:09:42
  */
 #include <iostream>
 #include <vector>
@@ -16,6 +16,10 @@ class Solution
 public:
     bool findNumberIn2DArray(vector<vector<int>> &matrix, int target)
     {
+        if (matrix.empty())
+        {
+            return false;
+        }
         auto n = matrix[0].size();
         auto m = matrix.size();
         int c = n - 1;
