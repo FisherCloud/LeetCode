@@ -23,6 +23,6 @@ func replaceSpace(s string) string {
 	return ans
 }
 
-func main() {
-    fmt.Println(replaceSpace("We are happy."))
-}
+// func main() {
+//     fmt.Println(replaceSpace("We are happy."))
+// }
