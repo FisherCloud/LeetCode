@@ -7,9 +7,9 @@
 // https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/
 package main
 
-import (
-	"fmt"
-)
+// import (
+// 	"fmt"
+// )
 
 func replaceSpace(s string) string {
 	var ans string
