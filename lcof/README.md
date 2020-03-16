@@ -153,6 +153,121 @@
 
 ---
 
+## 面试题09. 用两个栈实现队列
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof
+
+### 难度
+
+简单
+
+### 题目描述
+
+用两个栈实现一个队列。队列的声明如下，请实现它的两个函数 appendTail 和 deleteHead ，分别完成在队列尾部插入整数和在队列头部删除整数的功能。(若队列中没有元素，deleteHead 操作返回 -1 )
+ 
+### 示例 1：
+
+```text
+输入：
+["CQueue","appendTail","deleteHead","deleteHead"]
+[[],[3],[],[]]
+输出：[null,null,3,-1]
+```
+
+### 示例 2：
+
+```text
+输入：
+["CQueue","deleteHead","appendTail","appendTail","deleteHead","deleteHead"]
+[[],[],[5],[2],[],[]]
+输出：[null,-1,null,null,5,2]
+```
+
+提示：
+
+```
+1 <= values <= 10000
+最多会对 appendTail、deleteHead 进行 10000 次调用
+```
+
+---
+
+## 面试题10- I. 斐波那契数列
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof
+
+### 难度
+
+简单
+
+### 题目描述
+
+写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项。斐波那契数列的定义如下：
+
+```
+F(0) = 0,   F(1) = 1
+F(N) = F(N - 1) + F(N - 2), 其中 N > 1.
+```
+斐波那契数列由 0 和 1 开始，之后的斐波那契数就是由之前的两数相加而得出。
+
+答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。
+
+### 示例 1：
+
+```text
+输入：n = 2
+输出：1
+```
+### 示例 2：
+
+```text
+输入：n = 5
+输出：5
+```
+
+### 提示：
+
+```0 <= n <= 100```
+
+---
+
+## 面试题10- II. 青蛙跳台阶问题
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof
+
+### 难度
+
+简单
+
+### 题目描述
+
+一只青蛙一次可以跳上1级台阶，也可以跳上2级台阶。求该青蛙跳上一个 n 级的台阶总共有多少种跳法。
+
+答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。
+
+### 示例 1：
+
+```text
+输入：n = 2
+输出：2
+```
+
+### 示例 2：
+
+```text
+输入：n = 7
+输出：21
+```
+
+### 提示：
+
+```0 <= n <= 100```
+
+---
+
 ## 面试题11. 旋转数组的最小数字
 
 来源：力扣（LeetCode）
