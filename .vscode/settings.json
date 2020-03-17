@@ -5,6 +5,7 @@
         "string_view": "cpp",
         "algorithm": "cpp",
         "istream": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "unordered_map": "cpp"
     }
 }
