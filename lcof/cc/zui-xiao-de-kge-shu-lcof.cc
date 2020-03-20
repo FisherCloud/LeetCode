@@ -12,10 +12,7 @@ public:
     {
         sort(arr.begin(), arr.end());
         vector<int> ans(k, 0);
-        for (size_t i = 0; i < k; i++)
-        {
-            ans[i] = arr[i];
-        }
+        copy_n(arr.begin(), k, ans.begin());
         return ans;
     }
 };
