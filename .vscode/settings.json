@@ -6,6 +6,7 @@
         "algorithm": "cpp",
         "istream": "cpp",
         "limits": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "thread": "cpp"
     }
 }
