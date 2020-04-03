@@ -10,6 +10,7 @@
 #include <string>
 #include <cstdlib>
 #include <sstream>
+#include <limits.h>
 
 using namespace std;
 
@@ -18,8 +19,8 @@ class Solution
 public:
     int myAtoi(string str)
     {
-#if 0
-         int sign = 1;
+#if 1
+        int sign = 1;
         int i=0;
         while(str[i]==' ') i++;
         if(str[i]=='-')
@@ -69,5 +70,12 @@ int main(int argc, char const *argv[])
 {
     Solution s;
     cout << s.myAtoi("-91283472332");
+
+    // 借鉴别人的，666啊，除了效率低一点。#include <sstream>
+    int digit = 0;
+    istringstream is("-91283472332");
+    is >> digit;
+    cout << digit << endl;
+
     return 0;
 }
