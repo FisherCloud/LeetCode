@@ -92,15 +92,15 @@ int main(int argc, char const *argv[]) {
     // printNumber(10);
 
     // error
-    // thread tfizz(fizzbuzz->fizz, printFizz);
-    // thread tbuzz(fizzbuzz->buzz, printBuzz);
-    // thread tfizzbuzz(fizzbuzz->fizzbuzz, printFizzBuzz);
-    // thread tnumber(fizzbuzz->number, printNumber);
+    thread tfizz(&FizzBuzz::fizz, std::ref(fizzbuzz), printFizz);
+    thread tbuzz(&FizzBuzz::buzz, std::ref(fizzbuzz), printBuzz);
+    thread tfizzbuzz(&FizzBuzz::fizzbuzz, std::ref(fizzbuzz), printFizzBuzz);
+    thread tnumber(&FizzBuzz::number, std::ref(fizzbuzz), printNumber);
 
-    // tfizz.join();
-    // tbuzz.join();
-    // tfizzbuzz.join();
-    // tnumber.join();
+    tfizz.join();
+    tbuzz.join();
+    tfizzbuzz.join();
+    tnumber.join();
     delete fizzbuzz;
     return 0;
 }
