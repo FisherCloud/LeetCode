@@ -11,7 +11,7 @@ impl Solution {
         for i in 0..len {
             if i as i32 <= rightmost {
                 rightmost = rightmost.max(i as i32+ nums[i]);
-                if rightmost > (len - 1) as i32 {
+                if rightmost >= (len - 1) as i32 {
                     return true;
                 }
             }
